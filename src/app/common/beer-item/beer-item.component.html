@@ -1,0 +1,8 @@
+<section class="beer-item" *ngIf="beer" [routerLink]="['/beer', beer.id]" matRipple>
+  <h1 class="beer-item__title" [innerText]="beer.name"></h1>
+  <img class="beer-item__img" *ngIf="beer.image_url else noImage" [src]="beer.image_url" [alt]="beer.name">
+</section>
+
+<ng-template #noImage>
+  <div class="beer-item__no-photo"></div>
+</ng-template>

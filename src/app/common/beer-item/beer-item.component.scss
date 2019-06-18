@@ -1,0 +1,48 @@
+@import "mixin";
+
+:host {
+  display: grid;
+  @include box-shadow(1px 2px 3px 0 rgba(0, 0, 0, 0.4));
+}
+
+.beer-item {
+  display: grid;
+  grid-row-gap: 20px;
+  align-content: space-between;
+  justify-items: center;
+  padding: 20px 30px;
+  cursor: pointer;
+
+  @include media-queries(tablet) {
+    grid-column-gap: 40px;
+  }
+
+  @include media-queries(desktop) {
+    grid-column-gap: 40px;
+  }
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+
+    @include media-queries(tablet) {
+      font-size: 24px;
+    }
+
+    @include media-queries(desktop) {
+      font-size: 26px;
+    }
+  }
+
+  &__img {
+    width: 130px;
+    height: auto;
+  }
+
+  &__no-photo {
+    width: 130px;
+    height: 250px;
+    background: url("/assets/images/no-photo.jpg") no-repeat center center/130px 250px;
+  }
+}

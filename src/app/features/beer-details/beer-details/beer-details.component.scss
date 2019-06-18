@@ -1,0 +1,58 @@
+@import "variables";
+@import "mixin";
+
+
+:host {
+  margin: 15px auto;
+  max-width: $max-width;
+  min-width: $min-width;
+  width: 100%;
+  padding: 0 $layout-gap--left-mobile 0 $layout-gap--right-mobile;
+
+  @include media-queries(tablet) {
+    margin: 30px auto;
+  }
+
+  @include media-queries(desktop) {
+    margin: 40px auto;
+    padding: 0 $layout-gap--left-desktop 0 $layout-gap--right-desktop;
+  }
+}
+
+.beer-details {
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  font-family: 'Dosis', sans-serif;
+
+  &__title {
+    //font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  &__name {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  &__description {
+
+  }
+
+  &__abv {
+
+  }
+
+  &__brewers-tips {
+
+  }
+
+  &__contributed-by {
+
+  }
+
+  &__img {
+    width: 100px;
+    justify-self: center;
+  }
+}

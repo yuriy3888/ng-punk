@@ -1,0 +1,17 @@
+<mat-paginator [length]="length"
+  [hidePageSize]="hidePageSize"
+  [showFirstLastButtons]="showFirstLastButtons"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions"
+  (page)="pageEvent = $event">
+</mat-paginator>
+
+<div class="pagination" *ngIf="beers else emptyContent">
+  <h1 class="pagination__title">List of Beers</h1>
+  <app-beer-item *ngFor="let beer of beers" [beer]="beer"></app-beer-item>
+</div>
+
+<ng-template #emptyContent>
+  <h1 class="pagination__empty-list">There's no any beers right now.</h1>
+</ng-template>
+
