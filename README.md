@@ -1,6 +1,34 @@
-# Punk
+# Ng Punk
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.7.
+### Brief
+Using the Punk API and display a list of all beers.
+
+#### Input:
+
+- All beers GET https://api.punkapi.com/v2/beers
+- Single beer GET https://api.punkapi.com/v2/beers/1
+
+##Prerequisites
+
+Before you begin, make sure your development environment includes Node.js® and an npm package manager.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+
+Node.js
+Angular requires Node.js version 8.x or 10.x.
+
+To check your version, run node -v in a terminal/console window.
+
+To get Node.js, go to nodejs.org.
+
+npm package manager
+Angular, the Angular CLI, and Angular apps depend on features and functionality provided by libraries that are available as npm packages. To download and install npm packages, you must have an npm package manager.
+
+This Quick Start uses the npm client command line interface, which is installed with Node.js by default.
+
+To check that you have the npm client installed, run npm -v in a terminal/console window.
+
+Install packages: run 'npm install'
 
 ## Development server
 
